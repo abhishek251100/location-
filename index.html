@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find Nearby Lenskart</title>
+  </head>
+  <body>
+    <h2>Find Nearby Lenskart</h2>
+
+    <!-- Dropdown for selecting store -->
+    <select id="store-dropdown">
+      <option value="lenskart">Lenskart</option>
+      <option value="starbucks">starbucks</option>
+    </select>
+
+    <button onclick="findNearbyStore()">Submit</button>
+
+    <script>
+      function findNearbyStore() {
+        const selectedStore = document.getElementById("store-dropdown").value;
+
+        if (selectedStore === selectedStore ) {
+          window.open(
+            `https://www.google.com/maps/search/${selectedStore}+near+me`,
+            "_blank"
+          );
+        }
+      }
+    </script>
+  </body>
+</html>
